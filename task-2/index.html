@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Select your choice</h1>
+    </header>
+    <div class="tabs">
+        <div class="tab" onclick="showProducts('men')">
+        <p class="tab-item">Men</p>
+        </div>
+        <div class="tab" onclick="showProducts('women')">
+        <p class="tab-item">Women</p>
+        </div>
+        <div class="tab" onclick="showProducts('kids')">
+        <p class="tab-item">Kids</p>
+        </div>
+    </div>
+
+    <div class="product-card" id="menProducts">
+        <!-- Product cards will be dynamically added here -->
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

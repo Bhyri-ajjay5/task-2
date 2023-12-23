@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #41101e;
+}
+.title{
+    color: #b0c4e3;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+.tabs {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #333; */
+    padding: 10px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+}
+.tab-item{
+    display: block;
+    padding: 10px 20px;
+    width: 70%;
+    background-color: gray;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.tab-item:active {
+    background-color: black;
+}
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.badge {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #101110;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.discount-price {
+    color: red;
+}
+.compare-price{
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+span{
+    text-decoration: line-through;
+    text-decoration-color: gray;
+}
+
+/* media queries for small screen */
+
+@media screen and (max-width: 375px) {
+
+    body {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color:black;
+    }
+    .tabs{
+        display: flex;
+        align-items: center;
+        width: 60%;
+        margin: 0px 50px;
+    }
+    .tab-item{
+        display: block;
+        padding: 10px 10px;
+        width: 70%;
+        background-color: gray;
+        letter-spacing: 0px;
+    }
+
+}
